@@ -21,7 +21,10 @@ p {
     margin: 1em auto;
     text-align: center;
 }
-
+h1 {
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
 form {
     /* center form, maximum width 500px,
     minimum width 300px and default width 60% */
@@ -30,19 +33,24 @@ form {
     min-width: 300px;
     width: 60vw;
     padding-bottom: 2em;
+    border: 1px dashed white;
+    padding: 30px;
+    border-radius: 10px;
 }
 
 fieldset {
     /* remove fieldset border and no padding on left right only top and bottom
     apply only bottom border of 3px */
     border: none;
-    padding: 2rem 0;
+    padding: 1rem 0;
     border-bottom: 3px solid #3b3b4f;
+    margin-bottom: 1rem;
 }
 
 fieldset:last-of-type {
     /* last fieldset border bottom is way out of place. so we remove it */
     border: none;
+    padding: 0.5rem 0;
 }
 
 input,
@@ -53,6 +61,7 @@ select {
     /* margin: top right bottom left*/
     margin: 10px 0 0 0;
     min-height: 2em;
+    align-content: center;
 }
 
 input,
@@ -66,6 +75,15 @@ textarea {
     border: 1px solid #0a0a23;
     color: #fff;
     font-size: 18px;
+    font-weight: bold;
+}
+/* make the textarea fixed and not resizable*/
+textarea {
+    resize: none;
+}
+select {
+    height: 3em;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -97,4 +115,7 @@ input[type='file'] {
 }
 a {
     color: #dfdfe2;
+}
+a:hover {
+    color: brown;
 }
