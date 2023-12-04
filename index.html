@@ -45,7 +45,27 @@
                     />
                 </label>
             </fieldset>
-            <fieldset></fieldset>
+            <fieldset>
+                <legend>Account type (required)</legend>
+                <!-- Input of radio will group by using name attribue -->
+                <!-- checked = attribute is used to select a radio or checkbox by default  -->
+                <label for="personal-account"
+                    ><input
+                        type="radio"
+                        name="account-type"
+                        id="personal-account"
+                    />
+                    Personal</label
+                >
+                <label for="business-account"
+                    ><input
+                        type="radio"
+                        name="account-type"
+                        id="business-account"
+                    />
+                    Business</label
+                >
+            </fieldset>
             <fieldset></fieldset>
             <!-- if an input type is submit,
                 it is automatically set to submit to nearest parent form -->
